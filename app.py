@@ -10,6 +10,7 @@ df = pd.read_csv(data_file)
 
 # Initialize the Dash app
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 
 # Layout of the dashboard
 app.layout = dbc.Container([
@@ -128,7 +129,7 @@ def update_chart(chart_type, transaction_filter, chart_choice):
 
     # Return the figure, total transaction count, and total amount
     return fig, f"{total_transactions:,.0f}", f"MMK - {total_amount:,.2f}"
-server = app.server
+
 # Run the app
 if __name__ == "__main__":
     app.run_server(debug=True)
