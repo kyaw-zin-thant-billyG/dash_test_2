@@ -1,0 +1,24 @@
+/* Custom card with hover effect */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: scale(1.02); /* Slightly enlarge the card on hover */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Custom shadow */
+.shadow-lg {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Custom shadow for cards */
+}
+
+/* Custom gradient background on hover */
+.card-gradient {
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    transition: background 0.5s ease-in-out;
+}
+
+.card-gradient:hover {
+    background: linear-gradient(to right, #ff7e5f 0%, #feb47b 100%);
+}
