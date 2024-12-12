@@ -128,7 +128,7 @@ def update_chart(chart_type, transaction_filter, chart_choice):
 
     # Return the figure, total transaction count, and total amount
     return fig, f"{total_transactions:,.0f}", f"MMK - {total_amount:,.2f}"
-
+server = app.server
 # Run the app
 if __name__ == "__main__":
     app.run_server(debug=True)
