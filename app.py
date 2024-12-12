@@ -5,7 +5,7 @@ import dash_bootstrap_components as dbc
 import pandas as pd
 
 # Load the CSV file
-data_file = "C:/Users/ASUS/Desktop/ploty-dash-tuto/test2/tranaction_count_amount(2024OCT).csv"
+data_file = "tranaction_count_amount(2024OCT).csv"
 df = pd.read_csv(data_file)
 
 # Initialize the Dash app
